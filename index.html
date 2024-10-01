@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grind and Go - Tree Stump Grinding Services</title>
+    <title>Grind and Go - Professional Tree Stump Grinding Services</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,6 +11,7 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
         header {
             background-color: #ffd700;
@@ -26,10 +27,12 @@
         nav ul {
             list-style-type: none;
             padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
         }
         nav ul li {
-            display: inline;
-            margin-right: 10px;
+            margin: 0 10px;
         }
         nav ul li a {
             color: #fff;
@@ -48,9 +51,56 @@
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
+            font-weight: bold;
         }
         .btn:hover {
             background: #e6c200;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .hero {
+            background-image: url('/api/placeholder/1200/600');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .hero-content {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .testimonial {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .gallery img {
+            width: 30%;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
         }
     </style>
 </head>
@@ -64,28 +114,136 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#why-us">Why Choose Us</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#faq">FAQ</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Transform Your Yard Today!</h2>
+            <p>Professional stump grinding services for a clean, safe, and beautiful landscape.</p>
+            <a href="#contact" class="btn">Get a Free Quote</a>
+        </div>
+    </section>
+
     <div class="container">
-        <h2>Welcome to Grind and Go</h2>
-        <p>We specialize in efficient and affordable tree stump grinding services. Say goodbye to unsightly stumps and hello to a clean, usable yard!</p>
-        
-        <h3>Our Services</h3>
-        <ul>
-            <li>Residential Stump Grinding</li>
-            <li>Commercial Stump Removal</li>
-            <li>Land Clearing</li>
-            <li>Stump Mulching</li>
-        </ul>
-        
-        <a href="#contact" class="btn">Get a Free Quote</a>
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Residential Stump Grinding</li>
+                <li>Commercial Stump Removal</li>
+                <li>Land Clearing</li>
+                <li>Stump Mulching</li>
+            </ul>
+            <p>We handle all types of stumps using state-of-the-art equipment. Our services include complete debris removal, leaving your property clean and ready for new landscaping.</p>
+        </section>
+
+        <section id="benefits">
+            <h2>Benefits of Stump Grinding</h2>
+            <ul>
+                <li>Improves yard safety by eliminating tripping hazards</li>
+                <li>Prevents pest infestations in decaying stumps</li>
+                <li>Enhances property aesthetics</li>
+                <li>Creates usable space in your yard</li>
+                <li>Prevents regrowth of unwanted trees</li>
+            </ul>
+        </section>
+
+        <section id="why-us">
+            <h2>Why Choose Grind and Go?</h2>
+            <ul>
+                <li>Over 10 years of experience in stump grinding</li>
+                <li>State-of-the-art equipment for efficient and clean removal</li>
+                <li>Fully insured and licensed professionals</li>
+                <li>Eco-friendly practices and responsible waste management</li>
+                <li>Competitive pricing and free quotes</li>
+                <li>100% satisfaction guarantee</li>
+            </ul>
+        </section>
+
+        <section id="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="grid">
+                <div class="testimonial">
+                    <p>"Grind and Go did an amazing job removing the old oak stump in my backyard. Professional, quick, and left the area spotless!"</p>
+                    <p>- Sarah T., Hometown</p>
+                </div>
+                <div class="testimonial">
+                    <p>"I was impressed by their efficiency and reasonable prices. Highly recommend for any stump grinding needs!"</p>
+                    <p>- Mike R., Nearby City</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="service-areas">
+            <h2>Service Areas</h2>
+            <p>We proudly serve the following areas:</p>
+            <ul>
+                <li>Hometown</li>
+                <li>Nearby City</li>
+                <li>Surrounding Counties</li>
+            </ul>
+            <p>Not sure if we service your area? Contact us to find out!</p>
+        </section>
+
+        <section id="gallery">
+            <h2>Before & After Gallery</h2>
+            <div class="gallery">
+                <img src="/api/placeholder/300/300" alt="Before stump grinding">
+                <img src="/api/placeholder/300/300" alt="After stump grinding">
+                <img src="/api/placeholder/300/300" alt="Equipment in action">
+            </div>
+        </section>
+
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <h3>How long does the stump grinding process take?</h3>
+            <p>The process typically takes 30 minutes to 2 hours, depending on the size and location of the stump.</p>
+            <h3>Will stump grinding damage my lawn?</h3>
+            <p>We take great care to minimize any impact on your lawn. Our equipment is designed to be low-impact, and we clean up thoroughly after the job is done.</p>
+            <h3>What happens to the wood chips?</h3>
+            <p>We can either remove the wood chips or leave them for you to use as mulch in your garden.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Grind and Go</h2>
+            <p>Founded in 2014, Grind and Go has been serving our community with top-notch stump grinding services for over a decade. Our team of certified arborists and skilled technicians is committed to providing safe, efficient, and environmentally friendly stump removal solutions.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Ready to say goodbye to that unsightly stump? Get in touch with us today!</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Email: info@grindandgo.com</p>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+
+        <section id="cta">
+            <h2>Ready to Transform Your Yard?</h2>
+            <p>Don't let stumps hold you back from having the perfect landscape.</p>
+            <a href="#contact" class="btn">Get Your Free Quote Now</a>
+        </section>
     </div>
 
-    <footer style="background-color: #333; color: #fff; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%;">
+    <footer>
         <p>&copy; 2024 Grind and Go. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="#privacy">Privacy Policy</a></li>
+                <li><a href="#terms">Terms of Service</a></li>
+                <li><a href="#sitemap">Sitemap</a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>
