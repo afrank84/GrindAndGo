@@ -1,0 +1,14 @@
+sequenceDiagram
+    participant C as Customer
+    participant W as Website
+    participant WH as Webhook
+    participant GH as GitHub Actions
+    participant J as Jira
+    participant N as Your Phone Notifications
+
+    C->>W: Signs up or gets estimate
+    W->>WH: Triggers webhook
+    WH->>GH: Activates GitHub Action
+    GH->>J: Creates Jira ticket with customer info
+    J->>N: Sends notification
+    N->>You: Alerts you about new ticket
